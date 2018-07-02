@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TODO project</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="tasks-wrap mt-5">
+        <div class="container">
+            <div class="alert notification-alert"></div>
+            <div class="card mb-3">
+                <div class="card-header">
+                    add todo
+                </div>
+                <div class="card-body">
+                    <form name = 'addTodoItem'>
+                        <div class="form-group">
+                            <label for="todoText"></label>
+                            <input type="text" class = 'form-control' id = 'todoText'>
+                            <div class="invalid-feedback">
+                                Please enter some text
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card mb-3 list-card">
+                <!--<h3 class='alert alert-info'></h3>-->
+                <div class="card-header">
+                    Tasks list
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-info list-status hidden">Empty list</div>
+                    <ul class="list-group"></ul>
+                </div>
+            </div>
+            <button class="btn btn-primary clear-btn">Clear list</button>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+/*.tasks-wrap .alert{*/
+    /*//display: none;*/
+/*}*/
+
+.notification-alert{
+    display: none;
+}
+.notification-alert.show{
+    display: block;
+}
+.show{
+    display: block;
+}
+.hidden{
+    display: none;
+}
+.delete-item{
+    cursor: pointer;
+}
